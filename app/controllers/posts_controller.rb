@@ -7,6 +7,9 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
 
+def search
+    @@re = Post.search(params[:search])
+end
   # GET /posts/1
   # GET /posts/1.json
   def show
@@ -28,7 +31,7 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       if @post.save
-        format.html { redirect_to @post, notice: 'Post was successfully created.' }
+        format.html { redirect_to '/', notice: 'Post was successfully created.' }
         format.json { render :show, status: :created, location: @post }
       else
         format.html { render :new }

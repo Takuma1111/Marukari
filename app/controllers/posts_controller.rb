@@ -31,6 +31,7 @@ end
 
     respond_to do |format|
       if @post.save
+        # SampleMailer.send_when_create('takuma012011@gmail.com').deliver_now
         format.html { redirect_to '/', notice: 'Post was successfully created.' }
         format.json { render :show, status: :created, location: @post }
       else

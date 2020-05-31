@@ -28,7 +28,7 @@ class MembersController < ApplicationController
 
     respond_to do |format|
       if @member.save
-        SampleMzz1ailer.send_when_create(@member).deliver_now
+        SampleMailer.send_when_create(@member).deliver_now
         format.html { redirect_to @member, notice: 'Member was successfully created.' }
         format.json { render :show, status: :created, location: @member }
       else

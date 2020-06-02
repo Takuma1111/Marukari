@@ -1,5 +1,8 @@
+<center>
 <p id="notice"><%= notice %></p>
 
+
+<h1>購入しました</h1>
 <p>
   <strong>Name:</strong>
   <%= @member.name %>
@@ -24,6 +27,10 @@
 </p>
 
 
+<!--
+<%= link_to 'Edit', edit_member_path(@member) %>
+<%= link_to '戻る', members_path %>
+-->
+<%= link_to '戻る', '/' %>
 
-<%= link_to 'Edit', edit_member_path(@member) %> |
-<%= link_to 'Back', members_path %>
+</center>

@@ -102,8 +102,8 @@ Rails.application.configure do
 
   # ID = ENV['MAIL_ADDRESS']
   # PASS = ENV['MAIL_PASSWORD']
-  # ID = ''
-  # PASS = ''
+  ID = 'takuma012011@gmail.com'
+  PASS = '19980120Tkm'
   config.action_mailer.smtp_settings = {
   :enable_starttls_auto => true,
   :address => "smtp.gmail.com",

@@ -67,17 +67,17 @@ Rails.application.configure do
 
   # ID = ENV['MAIL_ADDRESS']
   # PASS = ENV['MAIL_PASSWORD']
-#   ID = 'takuma012011@gmail.com'
-#   PASS = 'mbxskhplpakmeynq'
-#   config.action_mailer.smtp_settings = {
-#   :enable_starttls_auto => true,
-#   :address => "smtp.gmail.com",
-#   :port => 587,
-#   :domain => 'localhost',                # Added domain and set to localhost
-#   # :domain => 'smtp.gmail.com',
-#   :user_name => ID, #gmailアドレス
-#   :password => PASS, #gmailパスワード
-#   :authentication => 'login',
-# }
+  ID = 'takuma012011@gmail.com'
+  PASS = 'mbxskhplpakmeynq'
+  config.action_mailer.smtp_settings = {
+  :enable_starttls_auto => true,
+  :address => "smtp.gmail.com",
+  :port => 587,
+  :domain => 'localhost',                # Added domain and set to localhost
+  # :domain => 'smtp.gmail.com',
+  :user_name => ID, #gmailアドレス
+  :password => PASS, #gmailパスワード
+  :authentication => 'login',
+}
 
 end

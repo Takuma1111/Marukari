@@ -1,17 +1,12 @@
 <center>
 <p id="notice"><%= notice %></p>
 
-
 <h1>購入しました</h1>
 <p>
   <strong>名前:</strong>
   <%= @member.name %>
 </p>
 
-<p>
-
-
-<p>
   <strong>メールアドレス:</strong>
   <%= @member.mailadd %>
 </p>
@@ -26,7 +21,8 @@
   <%= @member.apply %>
 </p>
 
-
+<%# 購入したものは削除する %>
+<% Post.find(@@ids).destroy %>
 <!--
 <%= link_to 'Edit', edit_member_path(@member) %>
 <%= link_to '戻る', members_path %>

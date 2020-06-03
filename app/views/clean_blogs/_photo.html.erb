@@ -18,8 +18,7 @@
               <p class="card-text">説明：<%= db.text %></p>
             </div>
             <% @@ids = db.id %>
-            <%= link_to "応募する", new_member_path(id:@@ids), {class: "btn btn-primary btn-height"} %>
-            <!-- <a href="members/new" class="btn btn-primary" style="color: white; font-size: 20px;">購入する</a> -->
+            <a href= <%= new_member_path(id:@@ids) %> class="btn btn-primary" style="color: white; font-size: 20px;">購入する</a>
           </div>
         </div>
     <% end %>
@@ -30,7 +29,7 @@
 <style>
   .btn-height{
     height: 50px;
-    font-size: 20px; 
+    font-size: 20px;
   }
 </style>
 

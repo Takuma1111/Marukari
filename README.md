@@ -4,6 +4,9 @@
 商品を出品・購入することができる⚪︎ルカリ風Webアプリです。
 
 # 使用技術
+言語
+* Ruby
+フレームワーク
 * Ruby On Rails
 
 # Screen Shot
